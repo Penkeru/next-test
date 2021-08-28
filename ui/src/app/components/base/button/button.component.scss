@@ -1,0 +1,36 @@
+.button-container{
+    width: 260px;
+    height: 42px;
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 100px;
+    box-sizing: border-box;
+    padding: 12px 16px;
+
+    .label{
+        float:left;
+    }
+
+    .arrow-container{
+        margin-top: 1px;
+        float:right;
+        .arrow{
+            width: 25px;
+            height: 14px;
+            background: url('../../../../assets/images/arrow.svg')
+        }
+    }
+
+    &.back-button{
+        .label{
+            float:right;
+        }
+
+        .arrow-container{
+            float:left;
+            .arrow{
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
