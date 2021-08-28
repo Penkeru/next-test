@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MovieModel } from '../../../models/movie';
+import { ApiService } from '../../../services/api.service';
 
 @Component({
   selector: 'app-main',
@@ -6,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-
-  constructor() { }
+  public currentMoviesList: MovieModel[];
+  constructor(private apiService: ApiService) {
+    this.currentMoviesList = [];
+  }
 
   ngOnInit(): void {
+    this.apiService.getMoviesList().subscribe((moviesList: MovieModel[])=>{
+      this.currentMoviesList = moviesList;
+    });
+  }
+
+  public showMovieDetails(movieId:number){
+    
   }
 
 }

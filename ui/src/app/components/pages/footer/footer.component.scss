@@ -8,28 +8,24 @@
 
     .next-icon{
         background: url('../../../../assets/images/favicon.svg');
-        width: 40px;
-        height: 40px;
-        margin-top: 41px;
-        width: 40px;
-        height: 40px;
-        margin-top: 41px;
-        margin: 41px auto 27px;
+        width: 2.5em;
+        height: 2.5em;
+        margin: 2.5em auto 1.688em;
     }
 
     .contact-container{
         .label{
-            font-size: 33px;
+            font-size: 2.063em;
         }
 
         .details{
-            font-size: 16px;
-            margin-top: 13px;
+            font-size: 1em;
+            margin-top: 0.813em;
         }
     }
 
     .socials-share-container{
-        margin: 38px auto 0;
+        margin: 2.375em auto 0;
         display: flex;    
         justify-content: center;
         align-items: center;
@@ -40,7 +36,7 @@
             margin: 0; 
             li{
                 float: left;
-                margin-left: 38px;
+                margin-left: 2.375em;
                 
                 &:first-child{
                     margin-left: 0;

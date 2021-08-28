@@ -1,22 +1,25 @@
 .movie-item-container{
     display: grid;
-    grid-template-rows: 385px 66px 28px 42px;
-    grid-row-gap: 20px;
-    width: 260px;
+    grid-template-rows: 24.063em 4.125em 1.75em 2.625em;
+    grid-row-gap: 1.25em;
+    width: 16.25em;
 
     .movie-cover{
-
+        width: 16.25em;
+        height: 24.063em;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 16.25em 24.063em;
     }
 
     .movie-name{
-
-    }
-
-    .movie-rating{
-
-    }
-
-    .movie-actions{
-
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.5em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-align: left;
     }
 }

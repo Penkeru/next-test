@@ -1,0 +1,10 @@
+.movies-list-container { 
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(144px, 260px));
+        grid-column-gap: 1em;
+        grid-row-gap: 5.875em;
+        list-style: none;
+        justify-content: center;
+    }
+}

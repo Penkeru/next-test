@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { MovieModel } from '../../../models/movie';
 
 @Component({
   selector: 'app-movie-item',
@@ -6,25 +7,22 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./movie-item.component.scss']
 })
 export class MovieItemComponent implements OnInit {
-  @Input() movieId: number;
-  @Input() movieCoverUrl: string;
-  @Input() movieName: string;
-  @Input() movieRating: number;
+  @Input() movie: MovieModel;
   @Output() movieActionClick: EventEmitter<number>;
+  public movieName;
 
   constructor() {
-    this.movieId = 0;
-    this.movieCoverUrl = '';
     this.movieName = '';
-    this.movieRating = 0;
+    this.movie = null as any;
     this.movieActionClick = new EventEmitter<any>();
   }
 
   ngOnInit(): void {
+    this.movieName = this.movie.title + '('+ this.movie.released +')';
   }
 
   public onMovieActionClick(event: any): void {
-    this.movieActionClick.emit(this.movieId);
+    this.movieActionClick.emit(this.movie.id);
   }
 
 }
