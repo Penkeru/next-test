@@ -1,0 +1,15 @@
+<div class="next-icon"></div>
+<div class="contact-container">
+    <div class="label">Contact us</div>
+    <div class="details">
+        <span>support@nextmovies.com<br />Mon - Fri | 6:00am - 5:00pm PT </span>
+    </div>
+</div>
+<div class="socials-share-container">
+    <ul>
+        <ng-container *ngFor="let social of socialOptions">
+            <li><a href="{{social.url}}"><div class="social-icon {{social.type}}" title="{{social.title}}"></div></a></li>
+        </ng-container>
+
+    </ul>
+</div>

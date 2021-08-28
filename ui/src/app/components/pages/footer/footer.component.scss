@@ -1,0 +1,85 @@
+:host{
+    width: 100%;
+    height: 100%;
+    background: #231F20;
+    text-align: center;
+    color: #ffffff;
+    font-family: Georgia;
+
+    .next-icon{
+        background: url('../../../../assets/images/favicon.svg');
+        width: 40px;
+        height: 40px;
+        margin-top: 41px;
+        width: 40px;
+        height: 40px;
+        margin-top: 41px;
+        margin: 41px auto 27px;
+    }
+
+    .contact-container{
+        .label{
+            font-size: 33px/37px;
+        }
+
+        .details{
+            font-size: 16px/21px;
+            margin-top: 13px;
+        }
+    }
+
+    .socials-share-container{
+        margin: 38px auto 0;
+        display: flex;    
+        justify-content: center;
+        align-items: center;
+
+        ul{
+            list-style-type: none; 
+            padding: 0; 
+            margin: 0; 
+            li{
+                float: left;
+                margin-left: 38px;
+                
+                &:first-child{
+                    margin-left: 0;
+                }
+
+                div.social-icon{
+                    cursor: pointer;
+                    &.facebook{
+                        background-image: url('../../../../assets/images/facebook-share-icon.svg');
+                        background-size: 10px 20px;
+                        width: 10px;
+                        height: 19px;
+                    }
+                    &.linkedin{
+                        background-image: url('../../../../assets/images/linkedin-share-icon.svg');
+                        background-size: 16px 16px;
+                        width: 16px;
+                        height: 16px;
+                    }
+                    &.twitter{
+                        background-image: url('../../../../assets/images/twitter-share-icon.svg');
+                        background-size: 20px 16px;
+                        width: 20px;
+                        height: 16px;
+                    }
+                    &.instagram{
+                        background-image: url('../../../../assets/images/instagram-share-icon.svg');
+                        background-size: 19px 19px;
+                        width: 19px;
+                        height: 19px;
+                    }
+                    &.youtube{
+                        background-image: url('../../../../assets/images/youtube-share-icon.svg');
+                        background-size: 21px 15px;
+                        width: 21px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
