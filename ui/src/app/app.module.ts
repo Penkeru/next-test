@@ -9,7 +9,9 @@ import { MainComponent } from './components/pages/main/main.component';
 import { ButtonComponent } from './components/base/button/button.component';
 import { RatingComponent } from './components/base/rating/rating.component';
 import { MovieItemComponent } from './components/base/movie-item/movie-item.component';
-import { MoviesListComponent } from './components/pages/movies-list/movies-list.component';
+import { MoviesListComponent } from './components/pages/movies/movies-list/movies-list.component';
+import { MovieDetailsComponent } from './components/pages/movies/movie-details/movie-details.component';
+import { ModalComponent } from './components/base/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { MoviesListComponent } from './components/pages/movies-list/movies-list.
     RatingComponent,
     MovieItemComponent,
     MoviesListComponent,
+    MovieDetailsComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

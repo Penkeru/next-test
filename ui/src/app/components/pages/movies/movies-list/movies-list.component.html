@@ -2,8 +2,7 @@
     <ul>
         <ng-container *ngFor="let movie of moviesList">
             <li>
-                <app-movie-item [movie]="movie">
-                    (movieActionClick)="showMovieDetails($event)"
+                <app-movie-item [movie]="movie" (movieActionClick)="onMovieSelect($event)">
                 </app-movie-item>
             </li>
         </ng-container>

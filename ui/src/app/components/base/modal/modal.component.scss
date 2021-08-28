@@ -1,0 +1,25 @@
+.modal {
+ 
+    z-index: 1000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 1360px;
+    min-width: 294px;
+    transform: translate(-50%, -50%);
+}
+.modal-body {
+    background: #ffffff;
+    padding:3.125em 8.688em; 
+}
+
+.modal-background {
+    z-index: 900;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.75;
+}

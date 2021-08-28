@@ -9,18 +9,24 @@ import { ApiService } from '../../../services/api.service';
 })
 export class MainComponent implements OnInit {
   public currentMoviesList: MovieModel[];
+  public selectedMovieId: number;
+  public showDialog: boolean;
   constructor(private apiService: ApiService) {
+    this.selectedMovieId = 0;
     this.currentMoviesList = [];
+    this.showDialog = false;
   }
 
+
   ngOnInit(): void {
-    this.apiService.getMoviesList().subscribe((moviesList: MovieModel[])=>{
+    this.apiService.getMoviesList().subscribe((moviesList: MovieModel[]) => {
       this.currentMoviesList = moviesList;
     });
   }
 
-  public showMovieDetails(movieId:number){
-    
+  public showMovieDetails(movieId: number) {
+    this.selectedMovieId = movieId;
+    this.showDialog = true;
   }
 
 }
