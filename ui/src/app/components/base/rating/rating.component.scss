@@ -1,0 +1,17 @@
+.rating-container{
+    display: grid;
+    grid-template-columns: 28px auto;
+    grid-column-gap: 7px;
+    align-items: center;
+
+    .rate-star-icon{
+        width: 28px;
+        height: 27px;
+        background: url('../../../../assets/images/star.svg');
+    }
+
+    .rating-details{
+        font-family: arial;
+        font-size: 25px;
+    }
+}

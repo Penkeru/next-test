@@ -1,0 +1,10 @@
+<div class="rating-container">
+    <div class="rate-star-icon"></div>
+    <div class="rating-details">
+        <span>{{currentRating}}</span>
+        <ng-container *ngIf="showHighRate">
+            <span class="seperator">/</span>
+            <span>{{highRateLimit}}</span>
+        </ng-container>
+    </div>
+</div>
