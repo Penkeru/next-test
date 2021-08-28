@@ -1,4 +1,4 @@
-<div class="button-container" [ngClass]="{'back-button': isBackButton}">
+<div class="button-container" [ngClass]="{'back-button': isBackButton}" (click)="onButtonClick($event)">
     <div class="label">
         <span>{{buttonLabel}}</span>
     </div>

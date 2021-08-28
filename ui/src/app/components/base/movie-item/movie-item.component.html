@@ -1,0 +1,8 @@
+<div class="movie-item-container">
+    <div class="movie-cover" [ngStyle]="{'background-image': 'url(' + movieCoverUrl + ')'}"></div>
+    <div class="movie-name">
+        <span>{{movieName}}</span>
+    </div>
+    <app-rating [currentRating]="movieRating"></app-rating>
+    <app-button buttonLabel="Read more" (buttonClick)="onMovieActionClick($event)"></app-button>
+</div>

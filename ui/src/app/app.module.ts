@@ -7,6 +7,7 @@ import { FooterComponent } from './components/pages/footer/footer.component';
 import { MainComponent } from './components/pages/main/main.component';
 import { ButtonComponent } from './components/base/button/button.component';
 import { RatingComponent } from './components/base/rating/rating.component';
+import { MovieItemComponent } from './components/base/movie-item/movie-item.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { RatingComponent } from './components/base/rating/rating.component';
     MainComponent,
     ButtonComponent,
     RatingComponent,
+    MovieItemComponent,
   ],
   imports: [
     BrowserModule
