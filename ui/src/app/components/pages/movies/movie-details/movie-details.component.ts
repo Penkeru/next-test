@@ -19,8 +19,8 @@ export class MovieDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     if (this.movieId) {
-      this.apiService.getMovieById(this.movieId).subscribe((movieDetails: MovieModel) => {
-        debugger;
+      this.apiService.getMovieById(this.movieId).subscribe((movies: MovieModel[]) => {
+        this.movieDetails = movies[0];
       });
     }
   }

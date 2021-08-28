@@ -1,3 +1,43 @@
 .movie-details-container{
-    
+    display: grid;
+    grid-template-columns: 24.875em 34.125em;
+    grid-column-gap: 9em;
+    .movie-cover{
+        width: 24.875em;
+        height: 36.938em;
+        background-repeat: no-repeat;
+        background-size: 24.875em 36.938em;
+    }
+
+    .movie-details{
+        display: grid;
+        grid-template-rows: 3.5em 4em 1.5em 1.75em auto;
+        text-align: left;
+        
+        .movie-title{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 2em;
+        }
+
+        .movie-length{
+            font-family: Arial;
+            font-size: 2em;
+            margin-top:0.625em;
+        }
+
+        .movie-description{
+            margin-top: 1.5em;
+            font-size: 2em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        app-rating{
+            margin-top: 1.5em;
+        }
+
+        app-button{
+            align-self: end;
+        }
+    }
 }
