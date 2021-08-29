@@ -1,7 +1,12 @@
 <div class="main-container">
     <div class="main-title"><span>Explore your next <br /> Movies and tv shows</span></div>
     <div class="main-content">
-        <app-movies-list [moviesList]="currentMoviesList" (movieSelected)="showMovieDetails($event)"></app-movies-list>
+        <div class="search-container">
+            <div class="search-icon"></div>
+            <input type="text" #movieSearchInput class="search" placeholder="What are you looking for?" />
+        </div>
+        <app-movies-list [searchHandler$]="searchHandler$" 
+        [moviesList]="currentMoviesList" (movieSelected)="showMovieDetails($event)"></app-movies-list>
     </div>
     <app-modal id="movie-details" *ngIf="showDialog">
         <app-movie-details [movieId]="selectedMovieId" (backClicked)="showDialog=false;"></app-movie-details>

@@ -1,6 +1,6 @@
 <div class="movies-list-container" *ngIf="moviesList.length">
     <ul>
-        <ng-container *ngFor="let movie of moviesList">
+        <ng-container *ngFor="let movie of moviesList | movieFilter: searchText">
             <li>
                 <app-movie-item [movie]="movie" (movieActionClick)="onMovieSelect($event)">
                 </app-movie-item>

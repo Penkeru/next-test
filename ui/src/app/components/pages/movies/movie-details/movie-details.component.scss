@@ -1,6 +1,7 @@
 .movie-details-container{
     display: grid;
-    grid-template-columns: 24.875em 34.125em;
+    grid-template-columns: repeat(auto-fit, minmax(294px, 1360px));
+    grid-template-rows: repeat(auto-fit, minmax(671px, 690px));
     grid-column-gap: 9em;
     .movie-cover{
         width: 24.875em;

@@ -3,8 +3,9 @@
     height: 100%;
     background: #ffffff;
     display: grid;
-    grid-template-columns: 404px auto ;
+    grid-template-columns: 404px auto;
     align-items: center;
+    grid-column-gap: 50px;
 
     .app-logo-container{
         justify-self: end;
@@ -14,6 +15,5 @@
             justify-content: right;
             background: url('../../../../assets/images/Logo2.png');
         }
-        
     }
 }
