@@ -12,6 +12,8 @@ export class MoviesListComponent implements OnInit {
   @Input() searchHandler$: Observable<string> | undefined;
   @Output() movieSelected: EventEmitter<number>;
   public searchText: string;
+
+
   constructor() {
     this.searchText = '';
     this.moviesList = [];
