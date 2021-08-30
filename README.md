@@ -4,6 +4,7 @@
 1. Download the repository
 2. Install npm modules: `npm install`
 3. Start up the server: `npm start`
+4. Start up the UI: `npm run ui`
 
 ## Usage
 1. Get all movies: http://localhost:3000/movies
