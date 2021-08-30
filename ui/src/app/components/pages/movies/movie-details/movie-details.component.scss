@@ -1,17 +1,23 @@
 .movie-details-container{
     display: grid;
-    grid-template-columns: 24.875em 34.125em;
-    grid-column-gap: 9em;
+    grid-template-columns: repeat(auto-fit, minmax(24.875em, 1fr));
+    grid-column-gap: 9rem;
+    max-height: 690px;
+    min-height: 671px;
+    min-width: 256px;
+    max-width: 1087px;
+
     .movie-cover{
-        width: 24.875em;
-        height: 36.938em;
+        width: 100%;
+        height: auto;
         background-repeat: no-repeat;
-        background-size: 24.875em 36.938em;
+        background-size: contain;
+        background-position: center;
     }
 
     .movie-details{
         display: grid;
-        grid-template-rows: 3.5em 4em 1.5em 1.75em auto;
+        grid-template-rows: 3.5rem 4rem 1.5rem 1.75rem auto;
         text-align: left;
         
         .movie-title{
@@ -23,17 +29,17 @@
         .movie-length{
             font-family: Arial;
             font-size: 2em;
-            margin-top:0.625em;
+            margin-top:0.625rem;
         }
 
         .movie-description{
-            margin-top: 1.5em;
+            margin-top: 1.5rem;
             font-size: 2em;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
         app-rating{
-            margin-top: 1.5em;
+            margin-top: 1.5rem;
         }
 
         app-button{

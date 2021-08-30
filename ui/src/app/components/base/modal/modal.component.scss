@@ -1,16 +1,17 @@
 .modal {
- 
     z-index: 1000;
     position: fixed;
     top: 50%;
     left: 50%;
     max-width: 1360px;
     min-width: 294px;
+    height: auto;
     transform: translate(-50%, -50%);
 }
 .modal-body {
     background: #ffffff;
-    padding:3.125em 8.688em; 
+    padding:3.125rem 8.688rem; 
+    box-sizing: border-box;
 }
 
 .modal-background {

@@ -1,20 +1,21 @@
 .movie-item-container{
     display: grid;
-    grid-template-rows: 24.063em 4.125em 1.75em 2.625em;
-    grid-row-gap: 1.25em;
-    width: 16.25em;
+    grid-template-rows: minmax(214px,385px) minmax(64px , 66px) minmax(22px , 28px) minmax(28px ,42px);
+    grid-row-gap: 1.25rem;
+    min-width: 144px;
+    max-width: 260px;
 
     .movie-cover{
-        width: 16.25em;
-        height: 24.063em;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 16.25em 24.063em;
+        background-size: contain;
+        height: auto;
+        width: 100%;
     }
 
     .movie-name{
         font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 1.5em;
+        font-size: 1.45em;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
