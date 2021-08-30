@@ -3,7 +3,7 @@
 ## Installation
 1. Download the repository
 2. Install npm modules: `npm install`
-3. Start up the server: `npm start`
+3. Start up the server: `npm run server`
 4. Start up the UI: `npm run ui`
 
 ## Usage
