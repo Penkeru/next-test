@@ -1,7 +1,7 @@
 .movie-item-container{
     display: grid;
-    grid-template-rows: minmax(214px,385px) minmax(64px , 66px) minmax(22px , 28px) minmax(28px ,42px);
-    grid-row-gap: 1.25rem;
+    grid-template-rows: 385px 55px 29px 42px;
+    grid-row-gap: 15px;
     min-width: 144px;
     max-width: 260px;
 

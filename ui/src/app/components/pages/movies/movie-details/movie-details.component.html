@@ -1,5 +1,7 @@
 <div class="movie-details-container" *ngIf="movieDetails">
-    <div class="movie-cover" [ngStyle]="{'background-image': 'url(' + movieDetails.largeimage + ')'}"></div>
+    <div class="movie-cover" [ngStyle]="{'background-image': 'url(' + movieDetails.largeimage + ')'}">
+        <div class="cover"></div>
+    </div>
     <div class="movie-details">
         <div class="movie-title">{{movieDetails.title}}</div>
         <div class="movie-length">{{movieDetails.runtime}}</div>

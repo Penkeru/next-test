@@ -1,25 +1,27 @@
 .movie-details-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24.875em, 1fr));
-    grid-column-gap: 9rem;
-    max-height: 690px;
-    min-height: 671px;
-    min-width: 256px;
-    max-width: 1087px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 
     .movie-cover{
-        width: 100%;
         height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 2;
         background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
+        order: 1
     }
 
     .movie-details{
-        display: grid;
-        grid-template-rows: 3.5rem 4rem 1.5rem 1.75rem auto;
         text-align: left;
-        
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 2;
+        order:2;
+
         .movie-title{
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
@@ -43,7 +45,7 @@
         }
 
         app-button{
-            align-self: end;
+            margin-top: 1.5rem
         }
     }
 }

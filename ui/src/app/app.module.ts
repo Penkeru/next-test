@@ -2,6 +2,8 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+
 //components
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/base/button/button.component';
@@ -15,7 +17,6 @@ import { MovieDetailsComponent } from './components/pages/movies/movie-details/m
 import { MoviesListComponent } from './components/pages/movies/movies-list/movies-list.component';
 // pipes
 import { MovieFilterPipe } from './pipes/movie-filter.pipe';
-
 
 
 @NgModule({
